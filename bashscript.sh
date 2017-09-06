@@ -7,7 +7,7 @@
 # Making the project infrastructure
 cd 2017-09-06_git_assignment 
 mkdir code data output data/raw_data output/figures output/tables
-echo "Made project infrastructure
+echo "Made project infrastructure"
 
 #Download crab_rRNA.fast file from the internet
 curl -L http://npk.io/aMPCOe+ -o filename.fasta
@@ -20,3 +20,9 @@ echo "Moved fasta file to raw_data sub directory"
 #Making empty README.md
 touch README.md
 echo "Made README.md"
+
+#Adding .gitkeep files in any empty directories
+touch code/.gitkeep 
+touch output/figures/.gitkeep
+touch output/tables/.gitkeep
+echo "Added .gitkeep files to empty directories"
